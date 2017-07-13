@@ -10,4 +10,5 @@ jinja_env.init(os.path.dirname(__file__))
 app = webapp2.WSGIApplication([
     ('/', main_handler.MainHandler),
     ('/books', book_handler.BookHandler),
+    ('/userstu', userstu_handler.UserstuHandler),
 ], debug=True)
