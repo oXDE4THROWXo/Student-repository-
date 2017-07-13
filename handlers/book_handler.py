@@ -9,6 +9,7 @@ class BookHandler(webapp2.RequestHandler):
     def get(self):
         logging.info("SecondHandler")
         books = book.Book.query().fetch()
+        #book(filename).Book(class name)
         # do stuff with books...
         html_params = {
             "title": "Second Title",
