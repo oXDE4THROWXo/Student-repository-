@@ -1,4 +1,4 @@
 from google.appengine.ext import ndb
 
-class Userstu(ndb.Model):
+class NewRegistry(ndb.Model):
     pass
