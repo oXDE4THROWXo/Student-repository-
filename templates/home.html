@@ -1,41 +1,62 @@
-<link rel="stylesheet" type="text/css" href="home_handler">
+<link rel="stylesheet" type="text/css" href="resources/home.css">
+<br></br>
 
 <h1>Just Like Home</h1>
 
+<br></br>
+
 {{ html_comments }}
 
-<div class="tab">
-  <button class="tablinks" onclick="openH(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openH(event, 'Add/Create Registry')">Add/Create Registry</button>
-  <button class="tablinks" onclick="openH(event, 'View Registry')">View Registry</button>
-  <button class="tablinks" onclick="openH(event, 'Items Recieved')">Items Recieved</button>
-  <button class="tablinks" onclick="openH(event, 'About Us')">About Us</button>
-</div>
+<html>
+<head>
+<style>
 
-<div id="Home" class="tabcontent">
-</div>
 
-<div id="Add/Create Registry" class="tabcontent">
-</div>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
-<div id="View" class="tabcontent">
-</div>
+li {
+    float: left;
+}
 
-<div id="Items Recieved" class="tabcontent">
-</div>
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-<div id="About Us" class="tabcontent">
-</div>
+li a:hover {
+    background-color: #111;
+}
+</style>
 
-<br>
-<p> Stuff about us</p>
+</head>
 
-<form method="POST">
-    <textarea name="form_contents" placeholder="stuff about us"></textarea>
-    
-</form>
 
-<form method="POST">
-    <textarea> stuff about us></textarea>
-    
-</form>
+<ul>
+  <li><a class="active" href="/home">Home</a></li>
+  <li><a href="/newregistry">Add/Create Registry</a></li>
+  <li><a href="/view">View Registry</a></li>
+  <li><a href="/recieved">Items Recieved</a></li>
+  <li><a href="/aboutus">About Us</a></li>
+</ul>
+
+
+</html>
+
+<br></br>
+<body>
+<p>About Our Company</p>
+
+<p id="companyinfo"> Our group decided to create this website that allows students to make a registry based on their wants and needs. Once they create an account and make a registry,  donors can supply the students wants and needs they listed in their registry. We decided to make "Just Like Home" because it allows donars to help college students in need.</p>
+
+<img src="http://blog.teamtreehouse.com/wp-content/uploads/2013/10/6881499716_e8f46fa096_b.jpg" style="width:304px;height:228px;">
+
+</body>
