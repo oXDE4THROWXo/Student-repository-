@@ -8,7 +8,7 @@ class MainHandler(webapp2.RequestHandler):
     	logging.info("MainHandler")
         html_params = {
             "title": "Just Like Home",
-            #"content": "Hello"
-        }
+            #"content": "Hello",
+                    }
         template = jinja_env.env.get_template('templates/tmpl.html')
         self.response.out.write(template.render(html_params))
