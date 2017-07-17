@@ -10,6 +10,7 @@ from handlers import newregistry_handler
 from handlers import SubmitThanks_handler
 from handlers import recieved_handler
 from handlers import view_handler
+from handlers import aboutus_handler
 
 
 jinja_env.init(os.path.dirname(__file__))
@@ -23,5 +24,6 @@ app = webapp2.WSGIApplication([
     ('/submitthanks', SubmitThanks_handler.SubmitThanksHandler),
     ('/view', view_handler.ViewHandler),
     ('/recieved', recieved_handler.RecievedHandler),
+    ('/aboutus', aboutus_handler.AboutUsHandler),
 
 ], debug=True)
