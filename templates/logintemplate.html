@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>{{ title }}</title>
-    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <link rel="stylesheet" type="text/css">
 </head>
 <body>
 <h1> Create Student Profile!</h1>
@@ -11,11 +11,30 @@
 <form method="POST">
     <p>What is your name?</p>
     <input name="form_name"></input>
+    
+    <p>How old are you?</p>
+    <input name="form_age"></input>
+
     <p> What is your Gender?</p>
-    <input name="form_name"></input>
-    <input type="radio" name="gender" value="male" checked> Male<br>
-    <input type="radio" name="gender" value="female"> Female<br>
-    <input type="radio" name="gender" value="other"> Other
+    <input type="radio" name="form_gender" value="male" checked> Male<br>
+    <input type="radio" name="form_gender" value="female"> Female<br>
+    <input type="radio" name="form_gender" value="other"> Other
+
+    <p>What School are you attending?</p>
+    <input name="form_school"></input>
+
+    <p> What is your Year Classification?</p>
+    <input type="radio" name="form_year" value="Freshman" checked> Freshman<br>
+    <input type="radio" name="form_year" value="Sophmore"> Sophmore<br>
+    <input type="radio" name="form_year" value="Junior"> Junior<br>
+    <input type="radio" name="form_year" value="Senior"> Senior
+    <br>
+    <br>
+    <br>
+    <input type="submit"/>
+    
+
+    
 
 
 </form>
