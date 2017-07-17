@@ -35,6 +35,7 @@ class UserstuHandler(webapp2.RequestHandler):
             student_gender = r_gender,
             student_school = r_school,
             student_year = r_year,
+            student_email = "fixthislater"
         )
         output.put()
         self.redirect("/home")

@@ -9,4 +9,5 @@ class Userstu(ndb.Model):
     student_gender = ndb.StringProperty()
     student_school = ndb.StringProperty()
     student_year = ndb.StringProperty()
+    student_email = ndb.StringProperty()
     

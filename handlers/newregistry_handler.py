@@ -11,5 +11,5 @@ class NewRegistryHandler(webapp2.RequestHandler):
             "title": "Main Title",
             "content": "Hello"
         }
-        template = jinja_env.env.get_template('templates/tmpl.html')
+        template = jinja_env.env.get_template('templates/newregistrytemplate.html')
         self.response.out.write(template.render(html_params))
