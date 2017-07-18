@@ -1,6 +1,6 @@
 
 body {
-	background: linear-gradient(#090808,#3942DE);
+	background: linear-gradient(#C5DBE5,#3942DE);
 	font-family: sans-serif;
 }
 
@@ -20,11 +20,14 @@ h1 {
 div {
     text-align: center;
     position:fixed;
-    color:#F75451;
+    color:#51C3F7;
     font-size: 20px;
     
 }
 
+#logo{
+    position:left;
+}
 
 #companyinfo{
 text-align:center;
