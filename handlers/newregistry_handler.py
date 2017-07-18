@@ -6,10 +6,39 @@ from models import newregistry
 
 class NewRegistryHandler(webapp2.RequestHandler):
     def get(self):
-    	logging.info("NewRegistry")
+        logging.info("NewRegistry")
+        items = newregistry.NewRegistry.query().fetch()
+        
+
+        content_str = ""
+        for item in items:
+            content_str += "<input type= \"checkbox\">"
+            content_str += "<h3>Item : " + item.student_item + "</h3>"
+            content_str += "<p>" + item.student_contents + "</p>"
+            content_str += "</input>"
+
+
+
         html_params = {
             "title": "Main Title",
-            "content": "Hello"
+            "html_item": content_str,
         }
         template = jinja_env.env.get_template('templates/newregistrytemplate.html')
         self.response.out.write(template.render(html_params))
+
+
+    def post(self):
+        logging.info("There was a post")
+        r_item = self.request.get("form_item")
+        r_contents = self.request.get("form_contents")
+        logging.info(r_item)
+        logging.info(r_contents)
+        
+        
+        output = newregistry.NewRegistry(
+            student_item = r_item,
+            student_contents = r_contents,
+            student_email = "fixthislater"
+        )
+        output.put()
+        self.redirect("/newregistry")

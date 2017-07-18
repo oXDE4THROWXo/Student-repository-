@@ -2,18 +2,27 @@
 <html>
 <head>
     <title>{{ title }}</title>
-    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="resources/home.css">
 </head>
 <body>
-<h1> Create Student Profile!</h1>
-{{ content }}
-{{ html_foobar }}
+<h1> Student Registry</h1>
+<h2> Hello (Placeholder for user name/email) </h2>
+<p> Add an item plus a description then press submit to add another item! </p>
+
+
 <form method="POST">
-    <p> This works </p>
+{{ html_item }}
+</form>
 
-    
 
-
+<form method="POST">
+	<p>Enter Item(placeholder)</p>
+    <input name="form_item"></input>
+	<br/>
+	<br/>
+	<textarea name="form_contents" placeholder="Description of item here..."></textarea>
+	<br/>
+	<input type="submit"/>
 </form>
 
 
