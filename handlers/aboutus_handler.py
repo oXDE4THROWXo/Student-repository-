@@ -6,4 +6,5 @@ from models import book
 
 class AboutUsHandler(webapp2.RequestHandler):
     def get(self):
-    	pass
+        template = jinja_env.env.get_template('templates/aboutus.html')
+        self.response.out.write(template.render())
