@@ -1,16 +1,26 @@
 
 body {
-	background: #444749;
+	background: linear-gradient(#090808,#3942DE);
 	font-family: sans-serif;
 }
 
 h1 {
 	text-align: center;
+    text-decoration: underline;
+    color:white;
+    font-size: 300%;
+    font-family: Snell Roundhand, cursive;
+    text-shadow: 2px 2px 5px blue;
+    font-stretch: extra-expanded;
+
+
 
 }
 
 div {
     text-align: center;
+    position:fixed;
+    
 }
 
 
@@ -18,14 +28,14 @@ div {
 text-align:center;
 margin-top: 100px;
 margin-bottom: 100px;
-margin-right: 400px;
-margin-left: 400px;
+margin-right: 300px;
+margin-left: 300px;
 
 }
 
-#home{
-margin-right: 400px;
-margin-left: 1500px;
+.homepictures{
+border-radius: 8px;
+
 }
 
 
