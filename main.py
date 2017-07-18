@@ -22,7 +22,6 @@ app = webapp2.WSGIApplication([
     ('/home', home_handler.HomeHandler),
     ('/newregistry', newregistry_handler.NewRegistryHandler),
     ('/submitthanks', SubmitThanks_handler.SubmitThanksHandler),
-    ('/view', view_handler.ViewHandler),
     ('/recieved', recieved_handler.RecievedHandler),
     ('/aboutus', aboutus_handler.AboutUsHandler),
 
