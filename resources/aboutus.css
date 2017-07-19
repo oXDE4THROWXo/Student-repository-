@@ -11,11 +11,25 @@ body {
     position: relative;
 }
 
+#chris {
+    width: 400px;
+    height: 400px;
+}
+
 h1{
 	font-family: 'Playball', cursive;
+    text-align: center;
+    font-size: 300%;
 }
 
 #aboutus{
 	font-size: 30px;
 	text-align: center;
+}
+
+#logo {
+    position: absolute;
+    top: -45px;
+    left: 16px;
+    font-size: 18px;
 }
