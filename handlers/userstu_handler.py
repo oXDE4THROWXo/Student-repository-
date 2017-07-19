@@ -11,7 +11,6 @@ class UserstuHandler(webapp2.RequestHandler):
 
 
         html_params = {
-            "title": "Main Title",
             "content": "Welcome"
         }
         template = jinja_env.env.get_template('templates/logintemplate.html')

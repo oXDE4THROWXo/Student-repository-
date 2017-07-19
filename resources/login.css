@@ -1,0 +1,50 @@
+body {
+    height: 100%;
+    margin: 100;
+
+    background: url("https://alexyvergara.files.wordpress.com/2013/03/graduation.jpg") no-repeat center center fixed;
+
+    background-size: cover;
+
+    font-family: sans-serif;
+}
+
+h1 {
+   text-align: center; 
+   top: 200px; 
+   left: 0; 
+   width: 100%;
+}
+
+ul {
+    font-family: sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li {
+    float: left;
+    display:inline-block;
+    display:inline;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#logo {
+    position: absolute;
+    right: 16px;
+    vertical-align: middle;
+    font-size: 18px;
+    height: 200px;
+}
