@@ -3,6 +3,7 @@ import logging
 import webapp2
 
 from models import newregistry
+from models import userstu
 
 class NewRegistryHandler(webapp2.RequestHandler):
     def get(self):
@@ -22,6 +23,7 @@ class NewRegistryHandler(webapp2.RequestHandler):
         html_params = {
             "title": "Main Title",
             "html_item": content_str,
+            "user_name": "Chris Placeholder"
         }
         template = jinja_env.env.get_template('templates/newregistrytemplate.html')
         self.response.out.write(template.render(html_params))
