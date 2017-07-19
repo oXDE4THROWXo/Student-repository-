@@ -26,14 +26,14 @@ class ViewHandler(webapp2.RequestHandler):
             content_str += "<p>" + item.student_contents + "</p>"
             content_str += "</input>"
 
-        user_query = userstu.Userstu.query(userstu.Userstu.name == user.email())
+        user_query = userstu.Userstu.query(userstu.Userstu.student_email == user.email())
         user_obj = user_query.get()
         logging.info(user_obj)
 
         html_params = {
             "title": "Main Title",
             "html_item": content_str,
-            "user_name": "Chris Placeholder"
+            "user_name": user_obj.student_name,
         }
         template = jinja_env.env.get_template('templates/view.html')
         self.response.out.write(template.render(html_params))
