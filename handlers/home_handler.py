@@ -13,6 +13,9 @@ class HomeHandler(webapp2.RequestHandler):
             
         }
 
+
+
+
    
 
         template = jinja_env.env.get_template('templates/home.html')

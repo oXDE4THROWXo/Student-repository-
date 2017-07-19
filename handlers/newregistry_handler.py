@@ -12,10 +12,10 @@ class NewRegistryHandler(webapp2.RequestHandler):
 
         content_str = ""
         for item in items:
-            content_str += "<input type= \"checkbox\">"
+            content_str += "<div>"
             content_str += "<h3>Item : " + item.student_item + "</h3>"
             content_str += "<p>" + item.student_contents + "</p>"
-            content_str += "</input>"
+            content_str += "</div>"
 
 
 
