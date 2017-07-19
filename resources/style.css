@@ -13,7 +13,20 @@ h1 {
    width: 100%;
 }
 
+h2 {
+  text-align: center;
+    color:black;
+    font-size: 300%;
+    font-family: Snell Roundhand, cursive;
+    text-shadow: 2px 2px 5px blue;
+    font-stretch: extra-expanded;
+    font-family: 'Playball', cursive;
+    vertical-align: middle;
+    display:relative;
 
+
+
+}
 #btn {
   -moz-box-shadow: 0px 1px 50px 14px #9fb4f2;
   -webkit-box-shadow: 0px 1px 50px 14px #9fb4f2;
@@ -71,7 +84,10 @@ h1 {
 #logo {
   /*display: flex; justify-content: center;*/
   /*margin: 0 auto; width: 180px;*/
+    display: block;
+    margin: 0 auto;
 }
+  }
 
 /*ul {
     font-family: sans-serif;
