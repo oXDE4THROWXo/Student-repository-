@@ -50,6 +50,30 @@ h2 {
   margin-top: -50px;
   margin-left: -100px;
 }
+
+#btn2 {
+  -moz-box-shadow: 0px 1px 50px 14px #9fb4f2;
+  -webkit-box-shadow: 0px 1px 50px 14px #9fb4f2;
+  box-shadow: 0px 1px 50px 14px #9fb4f2;
+  background-color:#0000ff;
+  -moz-border-radius:17px;
+  -webkit-border-radius:17px;
+  border-radius:17px;
+  border:1px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  margin-top: -50px;
+  margin-right: -200px;
+}
 /*#btn:hover {
   background-color:#476e9e;
 }
