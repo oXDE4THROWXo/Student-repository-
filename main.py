@@ -8,7 +8,6 @@ from handlers import home_handler
 from handlers import userstu_handler
 from handlers import newregistry_handler
 from handlers import SubmitThanks_handler
-from handlers import recieved_handler
 from handlers import aboutus_handler
 from handlers import view_handler
 
@@ -22,7 +21,6 @@ app = webapp2.WSGIApplication([
     ('/home', home_handler.HomeHandler),
     ('/newregistry', newregistry_handler.NewRegistryHandler),
     ('/submitthanks', SubmitThanks_handler.SubmitThanksHandler),
-    ('/recieved', recieved_handler.RecievedHandler),
     ('/aboutus', aboutus_handler.AboutUsHandler),
     ('/view', view_handler.ViewHandler),
 
