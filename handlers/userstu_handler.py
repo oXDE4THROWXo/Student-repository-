@@ -3,6 +3,7 @@ import logging
 import webapp2
 
 from models import userstu
+from google.appengine.api import users
 
 class UserstuHandler(webapp2.RequestHandler):
     def get(self):
@@ -18,6 +19,10 @@ class UserstuHandler(webapp2.RequestHandler):
 
 
     def post(self):
+        user = users.get_current_user()
+        if user == None:
+            self.redirect("/")
+            return
         logging.info("There was a post")
         r_age = self.request.get("form_age")
         r_name = self.request.get("form_name")
@@ -34,7 +39,7 @@ class UserstuHandler(webapp2.RequestHandler):
             student_gender = r_gender,
             student_school = r_school,
             student_year = r_year,
-            student_email = "fixthislater"
+            student_email = user.email(),
         )
         output.put()
         self.redirect("/home")
