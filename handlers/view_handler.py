@@ -4,9 +4,16 @@ import webapp2
 
 from google.appengine.ext import ndb
 from models import newregistry
+from models import userstu
+from google.appengine.api import users
 
 class ViewHandler(webapp2.RequestHandler):
     def get(self):
+        user = users.get_current_user()
+        if user == None:
+            self.redirect("/")
+            return
+
         logging.info("NewRegistry")
         items = newregistry.NewRegistry.query().fetch()
         
@@ -19,11 +26,14 @@ class ViewHandler(webapp2.RequestHandler):
             content_str += "<p>" + item.student_contents + "</p>"
             content_str += "</input>"
 
-
+        user_query = userstu.Userstu.query(userstu.Userstu.name == user.email())
+        user_obj = user_query.get()
+        logging.info(user_obj)
 
         html_params = {
             "title": "Main Title",
             "html_item": content_str,
+            "user_name": "Chris Placeholder"
         }
         template = jinja_env.env.get_template('templates/view.html')
         self.response.out.write(template.render(html_params))
