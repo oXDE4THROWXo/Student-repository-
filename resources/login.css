@@ -1,7 +1,7 @@
 body {
     height: 100%;
     margin: 100;
-
+    text-align: center;
     background: url("https://alexyvergara.files.wordpress.com/2013/03/graduation.jpg") no-repeat center center fixed;
 
     background-size: cover;
@@ -42,9 +42,11 @@ li a {
 }
 
 #logo {
-    position: absolute;
+    /*position: absolute;
     right: 16px;
     vertical-align: middle;
     font-size: 18px;
     height: 200px;
+*/  display: block;
+    margin: 0 auto;
 }
