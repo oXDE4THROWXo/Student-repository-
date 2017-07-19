@@ -10,3 +10,12 @@ body {
     height: 42%;
     position: relative;
 }
+
+h1{
+	font-family: 'Playball', cursive;
+}
+
+#aboutus{
+	font-size: 30px;
+	text-align: center;
+}

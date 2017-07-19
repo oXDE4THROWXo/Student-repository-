@@ -8,8 +8,8 @@ body {
 	text-align: center;
     color:black;
     font-size: 300%;
-    font-family: Snell Roundhand, cursive;
-    text-shadow: 2px 2px 5px blue;
+   
+    text-shadow: 2px 2px 5px #C5DBE5;
     font-stretch: extra-expanded;
     font-family: 'Playball', cursive;
     vertical-align: middle;
@@ -22,7 +22,7 @@ body {
 div {
     text-align: center;
     position:relative;
-    color:#51C3F7;
+    color:#FFFFFF;
     font-size: 20px;
     
 }
@@ -45,6 +45,26 @@ margin-left: 300px;
 .homepictures{
 border-radius: 8px;
 
+}
+
+#button {
+  -moz-box-shadow: 0px 1px 50px 14px #9fb4f2;
+  -webkit-box-shadow: 0px 1px 50px 14px #9fb4f2;
+  box-shadow: 0px 1px 50px 14px #9fb4f2;
+  background-color:#3942DE;
+  -moz-border-radius:17px;
+  -webkit-border-radius:17px;
+  border-radius:17px;
+  border:1px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#3942DE;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+  
 }
 
 
