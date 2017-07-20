@@ -2,8 +2,12 @@ body {
     margin: auto;
     width: 50%;
     padding: 10px;
+    
+    
 }
-
+html {
+    height: 100%;
+}
 .pics {
     border-radius: 50%;
     width: 42%;
