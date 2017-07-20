@@ -62,22 +62,17 @@ h1 {
     left: 16px;
     font-size: 18px;
 }
-body {
+/*body {
     margin: auto;
     width: 50%;
     padding: 10px;
-}
+}*/
 
 .pics {
     border-radius: 50%;
     width: 42%;
     height: 42%;
     position: relative;
-}
-
-#chris {
-    width: 200px;
-    height: 175px;
 }
 
 h1{
