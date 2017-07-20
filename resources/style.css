@@ -38,7 +38,7 @@ h2 {
   border:1px solid #4e6096;
   display:inline-block;
   cursor:pointer;
-  color:#ffffff;
+  color:white !important;
   font-family:Arial;
   font-size:17px;
   padding:16px 31px;
