@@ -8,7 +8,6 @@ from google.appengine.api import users
 class UserstuHandler(webapp2.RequestHandler):
     def get(self):
         logging.info("Userstu")
-        students = userstu.Userstu.query().fetch()
 
 
         html_params = {

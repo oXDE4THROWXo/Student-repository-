@@ -4,12 +4,17 @@ import webapp2
 
 from models import newregistry
 from models import userstu
+from google.appengine.api import users
 
 class NewRegistryHandler(webapp2.RequestHandler):
     def get(self):
+        user = users.get_current_user()
+        if user == None:
+            self.redirect("/")
+            return
         logging.info("NewRegistry")
         items = newregistry.NewRegistry.query().fetch()
-        
+        student = userstu.Userstu.query(user.email()==userstu.Userstu.student_email).get()
 
         content_str = ""
         for item in items:
@@ -23,7 +28,7 @@ class NewRegistryHandler(webapp2.RequestHandler):
         html_params = {
             "title": "Main Title",
             "html_item": content_str,
-            "user_name": "Chris Placeholder"
+            "user_name": student.student_name,
         }
         template = jinja_env.env.get_template('templates/newregistrytemplate.html')
         self.response.out.write(template.render(html_params))
