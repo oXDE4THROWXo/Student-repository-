@@ -62,22 +62,17 @@ h1 {
     left: 16px;
     font-size: 18px;
 }
-body {
+/*body {
     margin: auto;
     width: 50%;
     padding: 10px;
-}
+}*/
 
 .pics {
     border-radius: 50%;
     width: 42%;
     height: 42%;
     position: relative;
-}
-
-#chris {
-    width: 200px;
-    height: 175px;
 }
 
 h1{
@@ -87,6 +82,30 @@ h1{
 #aboutus{
 	font-size: 30px;
 	text-align: center;
+}
+
+#button {
+  -moz-box-shadow: 0px 1px 50px 14px #9fb4f2;
+  -webkit-box-shadow: 0px 1px 50px 14px #9fb4f2;
+  box-shadow: 0px 1px 50px 14px #9fb4f2;
+  background-color:#3942DE;
+  -moz-border-radius:17px;
+  -webkit-border-radius:17px;
+  border-radius:17px;
+  border:1px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#3942DE;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+
+  top: -75px;
+  left: 600px;
+  position: relative;
+  
 }
 /*#add{
 	text-align: center; 

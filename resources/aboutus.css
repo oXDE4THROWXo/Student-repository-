@@ -1,9 +1,24 @@
-body {
+/*body {
     margin: auto;
     width: 50%;
     padding: 10px;
-}
+     height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
+      background: linear-gradient(#C5DBE5,#3942DE);
+      font-family: sans-serif;
+    
+    
+}
+html {
+    height: 120%;
+}*/
+div {
+        margin: auto;
+    width: 50%;
+}
 .pics {
     border-radius: 50%;
     width: 42%;
@@ -32,5 +47,28 @@ h1{
     top: -45px;
     left: 16px;
     font-size: 18px;
-}
 
+}
+#button {
+  -moz-box-shadow: 0px 1px 50px 14px #9fb4f2;
+  -webkit-box-shadow: 0px 1px 50px 14px #9fb4f2;
+  box-shadow: 0px 1px 50px 14px #9fb4f2;
+  background-color:#3942DE;
+  -moz-border-radius:17px;
+  -webkit-border-radius:17px;
+  border-radius:17px;
+  border:1px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#3942DE;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+
+  top: -75px;
+  left: 1430px;
+  position: relative;
+  
+}
